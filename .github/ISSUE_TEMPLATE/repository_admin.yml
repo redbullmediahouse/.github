@@ -1,8 +1,7 @@
 name: Request administrator permission in the repository
 description: Allows the RBMH DPS Tech Team Internal members to request temporary admin permission in a repository
 title: Request administrator permission
-labels: ''
-assignees: ''
+labels: ["permission-request"]
 body:
   - type: markdown
     attributes:
