@@ -14,13 +14,3 @@ body:
       description: Tell us why you need administrator permissions.
     validations:
       required: true
-  - type: dropdown
-    id: expiration
-    attributes:
-      label: Expiration
-      description: How long do you need administrator permissions?
-      options:
-        - 1h
-        - 2h
-    validations:
-      required: true
