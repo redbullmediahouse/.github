@@ -6,11 +6,18 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please fill out the form the request administrator permissions in the repository
-  - type: textarea
-    id: reason
+        Please fill out the form to request administrator permissions in the repository
+  - type: checkboxes
+    id: fixing
     attributes:
-      label: Reason
-      description: Tell us why you need administrator permissions.
-    validations:
-      required: true
+      label: What kind of problem are you trying to solve with admin permissions?
+      options:
+        - label: Managing team access for the repository (temporary admin permissions required)
+        - label: Changing repository settings (temporary admin permissions required)
+        - label: Heroku integration (permanent admin permissions required)
+        - label: CircleCI integration (temporary admin permissions required)
+        - label: other stuff, fill out comment field below (temporary admin permissions required)
+  - type: textarea
+    id: comment
+    attributes:
+      label: Other comments
