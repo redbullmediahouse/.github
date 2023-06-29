@@ -1,12 +1,12 @@
-name: Request administrator permission in the repository
-description: Allows the RBMH DPS Tech Team Internal members to request temporary admin permission in a repository
-title: Request administrator permission
+name: Request repository admin permission
+description: Template for requests to get more permissions for a repository, mostly used to solve some integration problems
+title: Request repository admin permission
 labels: ["permission-request"]
 body:
   - type: markdown
     attributes:
       value: |
-        Please fill out the form to request administrator permissions in the repository
+        Please fill out the form to request admin permissions for this repository
   - type: checkboxes
     id: fixing
     attributes:
